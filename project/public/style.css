@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: all 1s linear;
+}
+.navbar {
+    padding: 20px ;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px #f1f1f3;
+
+}
+.navbar .nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+
+}
+.navbar .nav-items li {
+    font-size: 20px;
+    list-style: none;
+}
+.navbar .nav-items li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+}
+.navbar .nav-items li a {
+    transition: 2s all linear;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.section {
+    height: 100vh;
+}
+.section .carousel {
+    height: 500px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.section .carousel .header{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.sec .form {
+    width: 600px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+    padding: 10px;
+    border-radius: 6px;
+    transition: all 1s linear;
+    background-color: wheat;
+}
+.sec .form:hover {
+    box-shadow: 0 0 15px rgb(0, 0, 0);;
+}
+.sec .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec .form form input[type=text] {
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.sec .form form input[type=submit]{
+    width: 500px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all linear;
+}
+.sec .form form input[type=submit]:hover{
+    background-color: rgb(0, 0, 100);
+    transform: skew(-10deg);
+}
+.sec .form form input[type=password] {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+.sec .form .logo {
+    width: 500px;
+    padding: 30px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.sec .form .design {
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+    color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sec .form form .error {
+    color: red;
+}
+
+.addButton{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s linear;
+}
+.addButton:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+}
+.addButton a {
+    color: white;
+    font-size: 60px;
+    text-decoration: none;
+}
+.container{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.container .admin {
+    width: 400px;
+    padding: 50px;
+    height: 200px;
+    background-color: white;
+    margin-right: 30px;
+    font-size: 40px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+}
+.container .questions {
+    width: 400px;
+    padding: 50px;
+    height: 200px;
+    background-color: white;
+    font-size: 40px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+}
+.containers {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 900px;
+    height: 400px;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form form label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.form form textarea {
+    width: 900px;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+    margin-bottom: 5px;
+}
+.containers .form form input[type=text] {
+    width: 900px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+    border-radius: 8px;
+}
+.containers .form form input[type=submit] {
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: all 1s linear;
+}
+.containers .form form input[type=submit]:hover {
+    background-color: cornflowerblue;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+
+}
+.success {
+    background-color: rgba(0, 120, 0, 0.6);
+    color: white;
+    text-align: center;
+    width: 450px;
+    margin-left: 500px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sec .form .successs {
+    background-color: rgba(0, 120, 0, 0.6);
+    color: white;
+    width: 550px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
